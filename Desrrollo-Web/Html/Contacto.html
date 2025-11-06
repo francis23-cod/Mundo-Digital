@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/Css/Contacto.css">
+    <link rel="icon" href="/imagenes/logo.png">
+
+    <title>Mundo Digital</title>
+</head>
+
+<body>
+    
+    <!-- Barra de navegacion -->
+    <header class="header">
+        
+        <a href="/Html/Principal.html"><img src="/imagenes/logo-text.png" class="logo" title="Digitaliza-tu-Mundo"></a>
+        
+        <!------- Menu de Opciones ------>
+        <div class="menu" title="Opciones">
+            <label class="material-symbols-outlined" for="menu">menu</label>
+            <input type="checkbox" id="menu">
+            
+            <ul class="menu-list">
+                    <li>
+                        <a href="/Html/Contacto.html"><span class="material-symbols-outlined">call</span>Contacto</a>
+                    </li>
+                    <li>
+                        <a href="/Html/Desarrollo.html"><span class="material-symbols-outlined">table</span>Desarrollo</a>
+                    </li>
+                    <li>
+                        <a href="/Html/Aprendizaje.html"><span class="material-symbols-outlined">lightbulb</span>Aprendizaje</a>
+                    </li>
+                    <li>
+                        <a href="/Html/Soluciones.html"><span class="material-symbols-outlined">construction</span>Soluciones</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-symbols-outlined">groups</span>Nosotros</a>
+                                    <input type="color">
+                    </li>
+                </ul>
+        </div>
+        
+
+        <!----- Navegacion ------>
+        <ul class="hea-list">
+            <li class="hea-item">
+                <a href="/Html/Desarrollo.html"><span class="material-symbols-outlined" title="Crea tu Web">tag</span>Crea tu Web</a>
+            </li>
+            <li class="hea-item">
+                <a href="/Html/Soluciones.html"><span class="material-symbols-outlined" title="Solicita Ayuda">accessibility</span>Solicita Ayuda</a>
+            </li>
+            <li class="hea-item">
+                <a href="/Html/Aprendizaje.html"><span class="material-symbols-outlined" title="Explora Cursos">category</span>Explora Cursos</a>
+            </li>
+        </ul>
+    </header>
+<!-- -----------------------------Formulario de Contacto------------------------- -->
+
+    <form class="Formulario">
+        <h2>Formulario de Contacto</h2>
+        <legend>Informacion Personal:</legend>
+
+        <label>Nombre</label><br>
+            <input type="text" placeholder="Nombre" required minlength="4" class="content-input"><br>
+        <label>Correo Electronico</label><br>
+            <input type="email" placeholder="Correo Electronico" required class="content-input"><br>
+        <label>Contraseña</label><br>
+                <input type="password" placeholder="Contraseña" required minlength="5" class="content-input"><br>
+
+        <legend>Cuentanos tu problema:</legend>
+            <label class="mensaje">Deja tu mensaje para que nuestro equipo se ponga en contacto con usted</label><br>
+                <textarea required placeholder="Deje su mensaje"></textarea><br>
+                <input type="submit" placeholder="Enviar" class="Enviar">
+            </form>
+
+            <div class="shadow"></div>
+        </body>
+
+</html>
