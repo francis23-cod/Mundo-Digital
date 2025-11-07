@@ -1,0 +1,356 @@
+body {
+    margin: 0%;
+    background-color: #dce0e6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+        /* ------------------------------------------------Seccion de Navegacion--------------------------------------------- */
+span{
+    position: relative;
+    top: 5px;
+}
+.header {
+    background-color: #dce0e6;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+}
+.hea-list {
+    display: inline-flex;
+    margin-left: 45%;
+}
+.hea-item {
+    list-style: none;
+    margin: 5px;
+    padding-top: 10px;
+    transition: all, 0.4s;
+}
+.hea-item a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #1f1f20;
+}
+
+.logo{
+    position: relative;
+    left: 30px;
+    bottom: 100px;
+    width: 300px;
+}
+        /* ------------------------------------------------Seccion del menu--------------------------------------------- */
+.menu {
+    margin-top: 10px;
+    font-weight: bolder;
+    padding: 10px;
+    padding-top: 30px;
+    transition: all, 0.5s;
+    cursor: pointer;
+    position: absolute;
+}
+.menu label{
+        font-size: 30px;
+}
+#menu{
+    position: absolute;
+    display: none;
+}
+.menu-list {
+    display: none;
+    position: absolute;
+    background-color: #dce0e6;
+    border-right: #567ebb solid 1px;
+    border-left: #567ebb solid 1px;
+    width: 200px;
+    height: 100vh;
+    left: 5px;
+    list-style: none;
+    transition: all, 0.7s;
+}
+.menu-list li{
+    margin: 3px;
+    margin-top: 40px;
+    padding: 10px;
+}
+.menu-list a{
+    text-decoration: none;
+    color: gray;
+}
+        /* ------------------------------------------------Seccion de Desarrollo--------------------------------------------- */
+
+.titles{
+    background-image: url(/imagenes/footer-img.png);
+    color: #dce0e6;
+    padding: 20px;
+}
+.titles-card{
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.603));
+    animation: img-main 0.5s ease;
+    width: 500px;
+    padding: 50px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+.titles h1{
+    font-size: 26px;
+}
+.titles h2{
+    font-size: 17px;
+}
+
+.services-galery{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 10px;
+    top: 420px;
+    animation: cards 1s ease;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    transition: all, 0.3s;
+    color: #567ebb;
+    padding: 5px;
+    border: solid 1px #dce0e6;
+}
+.buttons{
+    display: flex;
+}
+.pro{
+    transition: all, 0.4s;
+    position: relative;
+    top: 10px;
+    border: #567ebb solid 1px;
+    border-radius: 5px;
+    color: #567ebb;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.ver{
+    transition: all, 0.4s;
+    position: absolute;
+    z-index: 1;
+    left: 60%;
+    top: 100%;
+    background-color: #ebe4e4;
+    border: #567ebb solid 1px;
+    border-radius: 5px;
+    color: #567ebb;
+    cursor: pointer;
+    text-decoration: none;
+    max-height: 30px;
+    padding: 15px 10px;
+}
+
+.service span{
+    font-size: 50px;
+    position: relative;
+    transition: all, 0.3s;
+}
+
+.text-p{
+    color: #152E4C;
+    position: relative;
+    bottom: 15px;
+    margin-top: 2%;
+    margin-left: 3%;
+    font-weight: lighter;
+}
+
+
+.container-examples{
+    background-color: #2b4c7e;
+    background-image: linear-gradient(to top, #1f1f20, transparent );
+}
+.examples{
+    margin-top: 150px;
+    padding: 100px 10px;
+    height: 100%;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 13%;
+}
+
+.examples img{
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #dce0e6;
+    padding: 5px;
+    transition: all,0.4s;
+}
+.examples img:first-child{
+    margin-left: 50%;
+}
+
+.examples h2{
+    position: absolute;
+    top: 610px;
+    left: 50px;
+    color: #dce0e6;
+    font-weight: bold;
+}
+
+.examples img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+
+.modal-box button{
+    background-color: #2b4c7e;
+    color: #dce0e6;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+ a.open-btn {
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-wrap {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .25s ease;
+    background: transparent;
+  }
+
+  .modal-box {
+    width: 90%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 70px 200px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: translateY(15px);
+    opacity: 0;
+    transition: all .25s ease;
+  }
+
+  /* cuando un modal está enfocado por :target */
+  .modal-wrap:target {
+    pointer-events: auto;
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+  }
+  .modal-wrap:target .modal-box {
+    opacity: 1;
+    transform: none;
+  }
+
+  a.close-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 14px;
+    background: #eee;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+  }
+
+        /* ------------------------------------------------Seccion Visual de la web--------------------------------------------- */
+.hea-item:hover{
+    background-color: #ebe4e4;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+
+.menu:hover{
+    background-color: rgb(230, 227, 227);
+}
+#menu:checked  + .menu-list{
+    display: block;
+}
+
+.menu-list li a{
+    transition: all, 0.5s;
+}
+
+.menu-list li:hover{
+    background-color: #ebe4e4;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menu-list li:hover a{
+    color: #2b4c7e;
+}
+
+.card:hover{
+    background-color: #567ebb;
+    color: #ebe4e4;
+    position: relative;
+    padding: 5px 50px;
+}
+.card:hover h2 {
+    color: #ebe4e4;
+}
+.card:hover span{
+    color: #ebe4e4;
+}
+
+
+.service:hover{
+    box-shadow: rgba(0, 0, 0, 0.39) 1px 1px 15px;
+}
+.service:hover img{
+    rotate: 10deg;
+    cursor: pointer;
+}
+
+.pro:hover{
+    background-color: #2b4c7e;
+    color: white;
+}
+.ver:hover{
+    background-color: #2b4c7e;
+    color: white;
+}
+
+         /* ------------------------------------------------Animaciones--------------------------------------------- */
+
+@keyframes img-main{
+    from{
+        opacity: 20%;
+        right: 90px;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes cards{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
