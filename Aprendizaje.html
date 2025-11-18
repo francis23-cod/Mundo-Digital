@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" href="logo.png">
+
+    <title>Mundo Digital</title>
+</head>
+
+<body>
+    
+    <!-- Barra de navegacion -->
+    <header class="header">
+        
+        <a href="index.html"><img src="logo-text.png" class="logo" title="Digitaliza-tu-Mundo"></a>
+        
+        <!------- Menu de Opciones ------>
+        <div class="menu" title="Opciones">
+            <label class="material-symbols-outlined" for="menu">menu</label>
+            <input type="checkbox" id="menu">
+            
+            <ul class="menu-list">
+                    <li>
+                        <a href="Contacto.html"><span class="material-symbols-outlined">call</span>Contacto</a>
+                    </li>
+                    <li>
+                        <a href="Desarrollo.html"><span class="material-symbols-outlined">table</span>Desarrollo</a>
+                    </li>
+                    <li>
+                        <a href="Aprendizaje.html"><span class="material-symbols-outlined">lightbulb</span>Aprendizaje</a>
+                    </li>
+                    <li>
+                        <a href="Soluciones.html"><span class="material-symbols-outlined">construction</span>Soluciones</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><span class="material-symbols-outlined">groups</span>Nosotros</a>
+                                    <input type="color">
+                    </li>
+                </ul>
+        </div>
+        
+
+        <!----- Navegacion ------>
+        <ul class="hea-list">
+            <li class="hea-item">
+                <a href="Desarrollo.html"><span class="material-symbols-outlined" title="Crea tu Web">tag</span>Crea tu Web</a>
+            </li>
+            <li class="hea-item">
+                <a href="Soluciones.html"><span class="material-symbols-outlined" title="Solicita Ayuda">accessibility</span>Solicita Ayuda</a>
+            </li>
+            <li class="hea-item">
+                <a href="Aprendizaje.html"><span class="material-symbols-outlined" title="Explora Cursos">category</span>Explora Cursos</a>
+            </li>
+        </ul>
+    </header>
+
+
+            <!------ Seccsion de Aprendisaje ------>
+
+            <section class="aprendizaje">
+                <div class="hea-apre">
+                    <div>
+                        <h2>Aprende con nosotros</h2>
+                        <p>Cursos y guías prácticas diseñadas para que aprendas a crear, mantener y optimizar proyectos web con ejemplos reales y lenguaje claro.</p>
+                    </div>
+                </div>
+
+                <div class="cursos">
+                    <div class="cur-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFQUqwD4_eK0RwWGG5ut-HL47Eo--X4suUmQ&s" alt="">
+                        <h3>HTML & CSS: De cero a experto</h3>
+                        <p>Construye páginas responsivas y aprende buenas prácticas de maquetación.</p>
+                            <span class="badge">Básico</span>
+                            <button class="btn" onclick="location.href='#curso-html'">Comenzar</button>
+                    </div>
+
+                    <div class="cur-item">
+                        <img src="https://i.ytimg.com/vi/z95mZVUcJ-E/maxresdefault.jpg">
+                        <h3>JavaScript práctico</h3>
+                        <p>Interactividad real: DOM, eventos y pequeños proyectos aplicables</p>
+                            <span class="badge">Intermedio</span>
+                            <button class="btn" onclick="location.href='#curso-html'">Comenzar</button>
+                    </div>
+
+                    <div class="cur-item">
+                        <img src="https://i.ytimg.com/vi/hikoV1Q9EzY/maxresdefault.jpg" alt="">
+                        <h3>Hosting y Mantenimiento</h3>
+                        <p>Backups, actualizaciones, y cómo proteger tu sitio contra amenazas comunes.</p>
+                            <span class="badge">Avansado</span>
+                            <button class="btn" onclick="location.href='#curso-html'">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Sección: Testimonios / Contador -->
+                
+<section id="testimonios" aria-labelledby="testimonios-title">
+  <div class="container">
+    <div>
+      <h2 id="testimonios-title">Testimonios de estudiantes</h2>
+      <p class="lead">Más de <strong>500 alumnos</strong> han aprendido con nuestros cursos y recursos prácticos.</p>
+    </div>
+
+    <!-- Contadores -->
+    <div class="stats" role="group" aria-label="Contadores de impacto">
+      <div class="stat">
+        <h3>500+</h3>
+        <p>Estudiantes activos</p>
+      </div>
+      <div class="stat">
+        <h3>30+</h3>
+        <p>Cursos y guías</p>
+      </div>
+      <div class="stat">
+        <h3>98%</h3>
+        <p>Satisfacción general</p>
+      </div>
+    </div>
+
+    <!-- Testimonios -->
+    <div class="testimonials" role="list">
+      <article class="testimonial-card" role="listitem">
+        <p>Gracias a sus cursos logré crear mi primera página web desde cero. Todo está bien explicado y con ejemplos claros.</p>
+        <div class="testimonial-footer">
+          <img src="https://i.pravatar.cc/100?img=5" alt="Foto de usuario">
+          <div>
+            <strong>Laura Gómez</strong><br>
+            <span>Estudiante de Desarrollo Web</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <p>El curso de JavaScript fue excelente. Aprendí a programar funciones y mejorar la interactividad de mis proyectos.</p>
+        <div class="testimonial-footer">
+          <img src="https://i.pravatar.cc/100?img=2" alt="Foto de usuario">
+          <div>
+            <strong>Carlos Martínez</strong><br>
+            <span>Programador en formación</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <p>Me encantó la parte de mantenimiento web. Ahora puedo gestionar y asegurar mis propios sitios sin depender de nadie.</p>
+        <div class="testimonial-footer">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Foto de usuario">
+          <div>
+            <strong>Andrea Pérez</strong><br>
+            <span>Emprendedora digital</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  body {
+    margin: 0px;
+    background-color: #ebe4e4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+        /* ------------------------------------------------Seccion de Navegacion--------------------------------------------- */
+.header {
+    background-color: #ebe4e4;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+}
+.hea-list {
+    display: inline-flex;
+    margin-left: 45%;
+}
+.hea-item {
+    list-style: none;
+    margin: 5px;
+    padding-top: 10px;
+    transition: all, 0.4s;
+}
+.hea-item a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+
+.hea-login{
+    background-color: #305F8B;
+    list-style: none;
+    margin-right: 20px;
+    padding: 15px;
+    transition: all, 0.4s; 
+    border-radius: 10px;
+    border: solid #305F8B;
+}
+.hea-login a{
+    text-decoration: none;
+    margin-top: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.logo{
+    position: relative;
+    left: 30px;
+    bottom: 100px;
+    width: 300px;
+}
+        /* ------------------------------------------------Seccion del menu--------------------------------------------- */
+.menu {
+    margin-top: 10px;
+    font-weight: bolder;
+    padding: 10px;
+    padding-top: 30px;
+    transition: all, 0.5s;
+    cursor: pointer;
+    position: absolute;
+}
+.menu label{
+        font-size: 30px;
+}
+#menu{
+    position: absolute;
+    display: none;
+}
+.menu-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-right: #305F8B solid 1px;
+    border-left: #305F8B solid 1px;
+    width: 200px;
+    height: 100vh;
+    left: 5px;
+    list-style: none;
+    transition: all, 0.7s;
+}
+.menu-list li{
+    margin: 3px;
+    margin-top: 40px;
+    padding: 10px;
+}
+.menu-list a{
+    text-decoration: none;
+    color: gray;
+}
+        /* ------------------------------------------------Seccion de contenido principal--------------------------------------------- */
+
+.aprendizaje{
+    position: relative;
+    top: 100px;
+}
+.hea-apre{
+    padding: 35px;
+    background-image: url(/imagenes/footer-img.png);
+    color: #ebe4e4;
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+}
+.hea-apre div{
+    max-width: 500px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.623));
+    padding: 10px;
+    position: relative;
+    right: 35px;
+    top: 35px;
+    animation: img-main 0.9s ease-in-out;
+}
+.hea-apre h2{
+    font-size: 28px;
+}
+
+
+.cursos{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 5px;
+}
+
+.cur-item{
+    background-color: #ffffff;
+    padding: 15px;
+    color: #305F8B;
+    border-radius: 10px;
+    transition: all, 0.5s;
+    animation: cursos 0.6s ease-in-out;
+}
+.cur-item h3{
+    font-weight: bolder;
+}
+.cur-item img{
+    width: 300px;
+}
+.cur-item:hover{
+    padding: 20px;
+}
+
+.badge{
+    border: #305F8B 1px solid;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.btn{
+    border: #305F8B 1px solid;
+    padding: 6px 15px;
+    background-color: #305F8B;
+    border-radius: 5px;
+    color: #ebe4e4;
+    margin-left: 90px;
+    cursor: pointer;
+    transition: all, 0.5s;
+}
+.btn:hover{
+    background-color: #ebe4e4;
+    color: #305F8B;
+}
+
+
+  #testimonios {
+    padding: 56px 20px;
+    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+    margin-top: 40px;
+  }
+  #testimonios .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 32px;
+  }
+
+  #testimonios h2 {
+    color: #305F8B;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    margin: 0;
+  }
+  #testimonios p.lead {
+    margin: 6px 0 0;
+    color: #475569;
+    font-size: 14px;
+    max-width: 720px;
+  }
+
+  /* Contador */
+  .stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .stat {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(48, 95, 139, 0.08);
+    flex: 1 1 220px;
+    text-align: center;
+  }
+  .stat h3 {
+    color: #305F8B;
+    font-size: 28px;
+    margin: 0 0 6px;
+  }
+  .stat p {
+    margin: 0;
+    font-size: 13px;
+    color: #475569;
+  }
+
+  /* Testimonios */
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .testimonial-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(48, 95, 139, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+  .testimonial-card::before {
+    content: "“";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 48px;
+    color: rgba(48, 95, 139, 0.15);
+  }
+  .testimonial-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.6;
+  }
+  .testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+  }
+  .testimonial-footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .testimonial-footer strong {
+    font-size: 14px;
+    color: #0f1724;
+  }
+  .testimonial-footer span {
+    font-size: 12px;
+    color: #64748b;
+  }
+
+  @media (max-width: 600px) {
+    .stat h3 { font-size: 24px; }
+  }
+
+  
+        /* ------------------------------------------------Seccion Visual de la web--------------------------------------------- */
+.hea-item:hover{
+    background-color: #ebe4e4;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.menu:hover{
+    background-color: rgb(230, 227, 227);
+}
+#menu:checked  + .menu-list{
+    display: block;
+}
+
+.menu-list li a{
+    transition: all, 0.5s;
+}
+
+.menu-list li:hover{
+    background-color: #ebe4e4;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menu-list li:hover a{
+    color: #152E4C;
+}
+
+         /* ------------------------------------------------Animaciones--------------------------------------------- */
+
+@keyframes img-main{
+    from{
+        opacity: 20%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes cursos{
+    from{
+        margin-left: 60%;
+    }
+    to{
+
+    }
+}
+
+</style>
+            </section>
+</body>
+
+</html>
